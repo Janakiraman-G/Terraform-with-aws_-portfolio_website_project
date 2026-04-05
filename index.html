@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Janakiraman | DevOps Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <header class="header">
+    <h1 class="fade-in">Hi, I'm Janakiraman 👋</h1>
+    <p class="fade-in delay">DevOps Engineer | Automation | Cloud Enthusiast</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </header>
+
+  <!-- JOURNEY -->
+  <section class="section slide-up">
+    <h2>🚀 My Journey</h2>
+    <p>
+      I started my career as a Test Engineer at Amazon, building a strong
+      foundation in quality assurance and debugging ans setting up the CI/CD pipelines. Over time, I transitioned
+      into DevOps by learning automation, Kubernetes, cloud infrastructure,
+      and containerization.
+    </p>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section slide-up">
+    <h2>💼 Experience</h2>
+    <ul class="timeline">
+      <li>
+        <h3>Test Engineer - Amazon</h3>
+        <p>Worked on testing, debugging, and automation improvements.</p>
+      </li>
+      <li>
+        <h3>DevOps Learning Journey</h3>
+        <p>Hands-on with Docker, Kubernetes, Terraform, CI/CD pipelines.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section slide-up" id="projects">
+    <h2>🔥 Projects</h2>
+    <div class="projects">
+
+      <div class="card">
+        <h3>CI/CD Pipeline</h3>
+        <p>Automated build & deploy using Jenkins, Docker, GitHub Actions.</p>
+      </div>
+
+      <div class="card">
+        <h3>Terraform AWS Infra</h3>
+        <p>Provisioned scalable AWS infra using Terraform modules.</p>
+      </div>
+
+      <div class="card">
+        <h3>Kubernetes Deployment</h3>
+        <p>Deployed microservices using Kubernetes with scaling.</p>
+      </div>
+
+      <div class="card">
+        <h3>Monitoring Stack</h3>
+        <p>Implemented Prometheus & Grafana monitoring solution.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section slide-up">
+    <h2>📬 Contact</h2>
+    <p>Email: janakiraman160603@gmail.com</p>
+    <p>GitHub: https://github.com/Janakiraman-G</p>
+    <p>LinkedIn: https://www.linkedin.com/in/janakiraman2003/</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer fade-in">
+    <p>© 2026 Janakiraman | DevOps Portfolio 🚀</p>
+  </footer>
+
+</body>
+</html>
+
+/* ================= CSS ================= */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+}
+
+.header {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.timeline li {
+  margin-bottom: 15px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.3);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+
+/* Animations */
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.fade-in.delay {
+  animation-delay: 0.5s;
+}
+
+.slide-up {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
